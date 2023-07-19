@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <META HTTP-EQUIV="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Story Writter</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <div class="logo hvr">
+                <i class="fa-regular fa-pen-to-square fa-flip-both fa-xl" color="#DDDDDD"></i>
+                <p class="heading" >Writeup</p>
+            </div>
+                <div class="home hvr">
+                    <i class="fa-sharp fa-solid fa-house fa-lg"></i>
+                    <p class="home-text"><a href="#" class="tectdeco active">Home</a></p>
+                </div>
+                <div class="dailydiary hvr">
+                    <i class="fa-solid fa-book fa-lg"></i>
+                    <p class="home-text"><a href="DailyDiary.php" class="tectdeco">Daily Diary</a></p>
+                </div>
+                <div class="dailydiary hvr">
+                    <i class="fa-solid fa-plus fa-lg"></i>
+                    <p class="home-text"><a href="Stories.php" class="tectdeco">Stories</a></p>
+                </div>
+                <div class="dailydiary hvr">
+
+                 
+                    <i class="fa-solid fa-user fa-lg"></i>
+                    <p class="home-text" ><?php 
+                            if(isset($_SESSION['username']))
+                            {
+                                echo $_SESSION['username'];
+
+                            }
+                          else{
+                            echo 'Accounts';
+                        }?></p>
+                    <!-- <div id="welcomeDiv"  style="display:none;" class="answer_list" > WELCOME</div>
+                    <input type="button" name="answer" value="Show Div" onclick="showDiv()" /> -->
+                    <button onclick="toggle()"><i class="fa-solid fa-bars fa-lg hambug"></i></button>
+                           
+                </div>
+                
+                
+                
+                
+
+        </div>
+    </header>
+    
+    <div id="authentics" style="display:none;" class="authentic">
+                <ul class="list-1">
+                    <p>My Profile</p>
+            <?php 
+            if(isset($_SESSION['username']))
+            {
+                echo 'Creaton On '.$_SESSION['created_on'];
+                echo '<a href="logout.php"> Logout</a>';
+                
+            }
+            else{
+                echo '<a href="Register.php">Signup</a>';
+                 echo '<a href="login.php"> Login</a>';
+            }
+            ?>
+            </a>
+        </ul> 
+    </div>
+
+    <!-- hero section -->
+
+    <div class="container">
+        <img src="group-people-reading-borrowing-books_53876-43122-removebg-preview.png" alt="">
+        <div class="hero-text">
+          <h1>Immerse Yourself in Storytelling: Discover the Power of Your Words</h1>
+          <p> Explore the limitless possibilities of words as you craft compelling narratives that captivate hearts and minds.!
+          </p>
+          <button>Write Now</button>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+    <div class="panel1">
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a href="">About Us</a>
+                    <a href="">How to Use</a>
+                    <a href="">About Developrs</a>
+                    <a href="">Contact Us</a>
+                    
+                </ul>
+            </div>
+            <div class="panel2">
+                <div class="icon-foot">
+                <i class="fa-regular fa-pen-to-square fa-flip-both fa-xl" color="#DDDDDD"></i>
+                <p class="heading" >Writeup</p>
+                </div>
+            </div>
+            <div class="panel3">
+                 <div class="conditions">
+                    <a href="">Conditions of Use</a>
+                    <a href="">Privacy Notice</a>               
+                 </div>
+                 <div class="copyright">
+                     © 2023-2023, Writeup.com, Inc. or its affiliates
+                 </div>
+            </div>
+    </footer>
+	<script src="index.js"></script>
+  </body>
+
+</html>

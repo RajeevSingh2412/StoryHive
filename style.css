@@ -1,0 +1,257 @@
+body{
+    background: linear-gradient(102.2deg, rgb(252, 40, 154) -9.9%, rgb(224, 125, 154) 34.7%, rgb(250, 165, 147) 89.1%);
+    margin:0px;
+    border:border-box;
+    font-family:arial;
+    
+}
+.navbar{
+    height:70px;
+    background-color:#1b1f1f;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    position:relative;
+    
+
+}
+.logo{
+    display:flex;
+    align-items:center;
+    width:25%;
+    align-items:left;
+}
+.heading{
+   font-size:1.5rem;
+   font-weight:bold;
+   color:#DDDDDD;
+   padding-left:10px;
+   font-family: cursive;
+
+}
+.fa-regular{
+    color:#DDDDDD;
+    padding-right:5px;
+}
+.home{
+    display:flex;
+    align-items:center;
+}
+.fa-sharp{
+    color:#DDDDDD;
+}
+.home-text{
+    font-size:1rem;
+    font-weight:bold;
+    color:#DDDDDD;
+    padding-left:5px;
+    padding-top:7px; 
+}
+.dailydiary{
+    display:flex;
+    align-items:center;
+}
+.fa-solid{
+    color:#DDDDDD;
+}
+.dailydiary button{
+    background-color:#1b1f1f;
+    border:0px;
+}
+.tectdeco{
+    text-decoration:none;
+    color:#DDDDDD;
+}
+.navbar a:active{
+    color:purple;
+}
+.active{
+    text-decoration:underline;
+
+}
+.authentic{
+    width: 10%;
+    text-align: left;
+    background-color:#1b1f1f ;
+    border:2px solid #DDDDDD;
+    color:#DDDDDD;
+    margin-top: 20px;
+    margin-right:110px;
+    float:right;
+    height:160px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.authentic ul a p{
+    text-align: center;
+    color:black;
+    text-decoration:none;
+    font-size:12px;
+}
+.hambug{
+    margin-top:13px;
+}
+/* .hvr:hover{
+    background-color:grey;
+} */
+.panel1{
+background-color:#222f3d;
+color:white;
+height:200px;
+display:flex;
+justify-content:space-evenly;
+position:relative;
+bottom:0px;
+}
+ul p{
+   font-size:16px;
+   color:#FFFFFF;
+   text-decoration:none;
+   margin-top:22px;
+}
+ul a{
+   display:block;
+   font-size:14px;
+   color:#DDDDDD;
+   text-decoration:none;
+   margin-top:14px;
+}
+.panel2{
+background-color:#222f3d;
+color:white;
+height:70px;
+border:0.5px solid white;
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+}
+.icon-foot{
+background-size:cover;
+width:75px;
+height:35px;
+display:flex;
+align-items:center;
+}
+.panel3{
+background-color:#0f1111;
+height:70px;
+color:#DDDDDD;
+font-size:13px;
+}
+.conditions{
+padding-top:20px;
+text-align:center;
+}
+.conditions a{
+color:#DDDDDD;
+text-decoration:none;
+
+}
+.copyright{
+text-align:center;
+padding-top:5px;
+}
+
+@media(max-width:990px){
+    html{
+        font-size: 70%;
+    }
+}
+
+@media(max-width:780px){
+    html{
+        font-size: 55%;
+    }
+}
+
+/* hero section */
+
+.hero{
+    margin-top: 20px;
+    display: flex;
+}
+
+.container {
+    height: 600px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .hero-text {
+    width: 80%;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.3rem;
+    margin-bottom: 12px;
+    color: #DDDDDD;
+  }
+  
+  .hero-text p {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  
+  button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    margin: 8px;
+    border: none;
+    background-color: #ec9268;
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em -0.2rem 0em #e1806d inset;
+    transition: color 3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    color: #8b4513;
+    border: 3px solid #e2739f;
+    cursor: pointer;
+  }
+  
+  /* for responsive */
+  
+  @media (max-width: 884px) {
+    .container {
+      margin-top: 10px;
+      flex-direction: column;
+    }
+    .hero-text {
+      width: 100%;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 678px) {
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 428px) {
+    nav ul {
+      display: none;
+    }
+  }
+
+    
